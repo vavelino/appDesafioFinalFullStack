@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: olive; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.default-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.padding {
+  padding: 10px;
+}
+.content {
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  background-color: lightcyan;
+}
+.inputs {
+  display: flex;
+  justify-content: space-around;
+}
+.input {
+  width: 32%;
+}
+.installments {
+  /* border: 5px solid gray; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.installment {
+  /* border: 5px solid goldenrod; */
+  width: 30%;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+}
+.Valores {
+  padding-left: 15px;
+}
+.SelectMonth {
+  /* border: 5px solid black; */
+  width: 30%;
+  height: 80%;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.SelectAll {
+  display: flex;
+  align-items: center;
+  padding-left: 40%;
+  /* border: 5px solid black; */
+}
+.outputs {
+  /* border: 5px solid black; */
+  display: flex;
+}
+.output {
+  /* border: 5px solid aqua; */
+  width: 25%;
+  align-content: center;
+  /* padding-left: 5%; */
+}
+.outputName {
+  color: black;
+  font-size: 16px;
+}
+.outputValor {
+  font-size: 16px;
+}
+.Filtro {
+  display: flex;
+  align-items: center;
+}
+.inputFiltro {
+  width: 70%;
+  padding-left: 20px;
+}
+.transactions {
+  /* border: 5px solid black; */
+}
+.transaction {
+  /* border: 5px solid red; */
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  /* justify-content: space-between; */
+}
+.negrito {
+  font-weight: bolder;
+}
+.information {
+  padding-left: 5%;
+}
+.valueTransaction {
+  /* border: 5px solid green; */
+  /* margin-left: 80%; */
+  padding: 10px;
+}
+.buttonsTransaction {
+  padding: 10px;
+  /* border: 5px solid blue; */
+
+  /* margin-left: 2%; */
+}
+.transactionItem {
+  display: flex;
+  /* border: 5px solid black; */
+}
+.rightInfo {
+  display: flex;
+  /* border: 5px solid orange; */
+  width: 50%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.leftInfo {
+  display: flex;
+  /* border: 5px solid orchid; */
+  width: 50%;
+  height: 100%;
+}
+.invisivel {
+  display: none;
+}
+.Modal {
+  border: 1px solid black;
+  padding: 10px;
+  width: 50%;
+  margin: 20%;
+  background-color: cornsilk;
+}
+.ModalValue {
+  /* border: 5px solid black; */
+  width: 50%;
+}
+.ModalDate {
+  /* border: 5px solid orangered; */
+  width: 50%;
+  /* border: 1px solid black; */
+  padding: 0px;
+  margin: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.ModalValueDate {
+  display: flex;
+  align-items: flex-end;
+}
+.ModalButton {
+  margin-top: 5px;
+  border: 1px solid black;
+}
