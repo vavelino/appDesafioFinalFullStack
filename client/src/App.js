@@ -22,7 +22,7 @@ import ModalTransaction from './components/modalTransaction/ModalTransaction';
 //import ModalTransaction from './components/modalTransaction/ModalTransaction';
 
 let transactionPeriod; // FULL JSON PERIOD
-
+let dataCurrent;
 export default function Component() {
   const [amount, setAmount] = useState(0);
   const [revenue, setRevenue] = useState(0);
@@ -62,7 +62,7 @@ export default function Component() {
       type,
     });
     setIsModalCreate(false);
-    console.log('Criado');
+    handlechangeMonth(dataCurrent);
     //console.log('day' + day + 'month' + month + 'year' + year);
   };
 
@@ -104,6 +104,7 @@ export default function Component() {
       year: year,
     });
     setIsModalOpen(false);
+    handlechangeMonth(dataCurrent);
   };
   const handleOpenCreate = () => {
     setIsModalCreate(true);
@@ -126,6 +127,7 @@ export default function Component() {
   const handleDeleteButton = async (id) => {
     deleteTransaction(id);
     console.log('Excluido com sucesso');
+    handlechangeMonth(dataCurrent);
 
     // console.log(deleteTransaction(id));
     // console.log(id);
@@ -156,6 +158,7 @@ export default function Component() {
   }, [transactionsCurrent]);
 
   async function handlechangeMonth(valueMonth) {
+    dataCurrent = valueMonth;
     const period = monthsEqualDB[valueMonth];
     transactionPeriod = await getAllTransaction(period);
     setTransactionsCurrent(transactionPeriod.data);
